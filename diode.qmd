@@ -1,0 +1,688 @@
+---
+title: "Diode Electrical Characteristics Reference"
+format: html
+author: "Electronics Reference"
+date: today
+toc: true
+toc-depth: 3
+---
+
+# Diode Electrical Characteristics
+
+This document provides a comprehensive reference of electrical characteristics for different diode variants available in the market.
+
+## 1. Standard Rectifier Diodes (PN Junction)
+
+### DC Characteristics
+
+- **$V_F$** - Forward Voltage Drop
+- **$I_F$** - Forward Current
+- **$I_{F(AV)}$** - Average Forward Current
+- **$I_{FSM}$** - Non-repetitive Peak Forward Surge Current
+- **$I_R$** - Reverse Current (Leakage Current)
+- **$V_R$** - Reverse Voltage
+- **$V_{RRM}$** - Maximum Repetitive Peak Reverse Voltage
+- **$V_{RWM}$** - Working Peak Reverse Voltage
+- **$V_{R(DC)}$** - Maximum DC Blocking Voltage
+- **$V_{BR}$** - Reverse Breakdown Voltage
+- **$I_{R(max)}$** - Maximum Reverse Leakage Current
+
+### Dynamic/Switching Characteristics
+
+- **$t_{rr}$** - Reverse Recovery Time
+- **$Q_{rr}$** - Reverse Recovery Charge
+- **$I_{RRM}$** - Peak Reverse Recovery Current
+- **$t_f$** - Forward Recovery Time
+- **$t_{fr}$** - Forward Recovery Time
+- **$di_F/dt$** - Rate of Change of Forward Current
+- **$dv_R/dt$** - Rate of Change of Reverse Voltage
+- **$S$ or $S_f$** - Softness Factor (Recovery Characteristic)
+
+### Capacitance Characteristics
+
+- **$C_j$ or $C_D$** - Junction Capacitance
+- **$C_T$** - Total Capacitance
+- **$C_0$** - Zero-bias Capacitance
+
+### Thermal Characteristics
+
+- **$P_D$ or $P_{tot}$** - Total Power Dissipation
+- **$T_j$** - Junction Temperature
+- **$T_{j(max)}$** - Maximum Junction Temperature
+- **$T_{stg}$** - Storage Temperature Range
+- **$\theta_{JC}$** - Thermal Resistance Junction-to-Case
+- **$\theta_{JA}$** - Thermal Resistance Junction-to-Ambient
+- **$\theta_{JL}$** - Thermal Resistance Junction-to-Lead
+- **$R_{\theta JC}$** - Thermal Resistance Junction-to-Case
+
+### Temperature Coefficients
+
+- **$TC_{V_F}$** - Temperature Coefficient of Forward Voltage
+- **$TC_{I_R}$** - Temperature Coefficient of Reverse Current
+
+## 2. Fast Recovery Diodes
+
+All standard rectifier characteristics plus:
+
+### Enhanced Switching Characteristics
+
+- **$t_{rr}$** - Reverse Recovery Time (typically < 500ns, often < 200ns)
+- **$Q_{rr}$** - Reverse Recovery Charge (reduced)
+- **$I_{RRM}$** - Peak Reverse Recovery Current
+- **$S_f$** - Softness Factor (typically 0.3-0.7)
+- **$t_a$** - Time to Peak Recovery Current
+- **$t_b$** - Time from Peak to Zero Current
+
+### Applications-Specific Parameters
+
+- **$di_F/dt$ Rating** - Maximum rate of forward current change
+- **$dv_R/dt$ Rating** - Maximum rate of reverse voltage change
+
+## 3. Ultrafast Recovery Diodes
+
+Similar to Fast Recovery with:
+
+- **$t_{rr}$** - Reverse Recovery Time (typically < 100ns, often < 50ns)
+- **Very low $Q_{rr}$** - Minimal reverse recovery charge
+- **Higher switching frequency capability**
+
+## 4. Schottky Barrier Diodes (SBD)
+
+### DC Characteristics
+
+- **$V_F$** - Forward Voltage Drop (typically 0.15V - 0.45V, lower than PN)
+- **$I_F$** - Forward Current
+- **$I_{F(AV)}$** - Average Forward Current
+- **$I_{FSM}$** - Surge Current
+- **$I_R$** - Reverse Leakage Current (higher than standard diodes)
+- **$V_R$** - Reverse Voltage (typically lower breakdown than PN)
+- **$V_{RRM}$** - Maximum Reverse Voltage
+- **$V_{BR}$** - Reverse Breakdown Voltage
+
+### Switching Characteristics
+
+- **$t_{rr}$** - Reverse Recovery Time (negligible, typically < 10ns)
+- **$Q_{rr}$** - Reverse Recovery Charge (very low or zero)
+- **Near-zero reverse recovery**
+- **$C_T$** - Total Capacitance (typically higher than PN)
+
+### Capacitance Characteristics
+
+- **$C_j$** - Junction Capacitance (voltage dependent)
+- **$C_{j0}$** - Zero-bias Junction Capacitance
+- **$V_j$** - Junction Potential
+
+### Thermal Characteristics
+
+- Similar to standard diodes
+- **Lower forward power loss** due to lower $V_F$
+- **Higher temperature sensitivity** of leakage current
+
+## 5. Zener Diodes (Voltage Reference/Regulator)
+
+### DC Characteristics
+
+- **$V_Z$** - Zener Voltage (at specified test current)
+- **$I_{ZT}$** - Zener Test Current
+- **$I_{ZK}$** - Zener Knee Current (minimum operating current)
+- **$I_{ZM}$** - Maximum Zener Current
+- **$V_F$** - Forward Voltage
+- **$I_R$** - Reverse Leakage Current (before breakdown)
+- **$P_D$ or $P_{Z(max)}$** - Maximum Power Dissipation
+
+### Dynamic Characteristics
+
+- **$Z_{ZT}$ or $r_Z$** - Dynamic Impedance (at test current)
+- **$Z_{ZK}$** - Dynamic Impedance at Knee
+- **$\Delta V_Z/\Delta I_Z$** - Voltage regulation characteristic
+
+### Voltage Regulation Characteristics
+
+- **$\Delta V_Z$** - Voltage Tolerance (±5%, ±2%, ±1%, etc.)
+- **$\Delta V_Z/\Delta T$** - Temperature Coefficient of Zener Voltage
+- **$TC_{V_Z}$** - Temperature Coefficient (typically ±0.05%/°C to ±0.1%/°C)
+- **Line Regulation** - Voltage change with input voltage variation
+- **Load Regulation** - Voltage change with load current variation
+
+### Noise Characteristics
+
+- **$V_n$** - Noise Voltage (important for low-noise references)
+- **Noise Spectral Density**
+
+### Thermal Characteristics
+
+- **$\theta_{JA}$** - Thermal Resistance Junction-to-Ambient
+- **$\theta_{JL}$** - Thermal Resistance Junction-to-Lead
+- **$T_{j(max)}$** - Maximum Junction Temperature
+
+## 6. Transient Voltage Suppression (TVS) Diodes
+
+### DC/Static Characteristics
+
+- **$V_{RWM}$ or $V_R$** - Reverse Stand-off Voltage (working voltage)
+- **$V_{BR}$** - Breakdown Voltage (at specified test current)
+- **$I_R$** - Reverse Leakage Current (at $V_{RWM}$)
+- **$V_F$** - Forward Voltage (for bidirectional types)
+
+### Transient Characteristics
+
+- **$V_C$ or $V_{CL}$** - Clamping Voltage (at peak pulse current)
+- **$I_{PP}$ or $I_{P(pulse)}$** - Peak Pulse Current
+- **$P_{PP}$** - Peak Pulse Power
+- **$W$** - Energy Absorption Capability
+- **$t_r$** - Response Time (typically < 1ps to 1ns)
+- **$t_c$** - Clamping Time
+
+### Capacitance Characteristics
+
+- **$C_j$** - Junction Capacitance (critical for high-speed data lines)
+- **$C_{in}$** - Input Capacitance
+
+### ESD Protection Characteristics
+
+- **$I_{ESD}$** - ESD Current Rating
+- **Contact Discharge Rating** (kV)
+- **Air Discharge Rating** (kV)
+- **IEC 61000-4-2 Level** - ESD immunity level
+- **$V_{ESD}$** - ESD Withstand Voltage
+
+### Surge Characteristics
+
+- **$8/20\mu s$ Pulse** - Standard surge waveform rating
+- **$10/1000\mu s$ Pulse** - Long duration surge rating
+- **Repetitive surge capability**
+
+## 7. Light Emitting Diodes (LED)
+
+### Optical Characteristics
+
+- **$\lambda_p$ or $\lambda_{peak}$** - Peak Wavelength
+- **$\lambda_d$ or $\lambda_{dom}$** - Dominant Wavelength
+- **$\Delta\lambda$** - Spectral Half-Width
+- **$I_v$** - Luminous Intensity (candela, cd)
+- **$\Phi_v$** - Luminous Flux (lumens, lm)
+- **$\Phi_e$** - Radiant Flux (watts)
+- **$L_v$** - Luminance (cd/m²)
+- **$E_v$** - Illuminance (lux)
+- **Viewing Angle** - Half-intensity angle (2θ½)
+- **CRI** - Color Rendering Index
+- **CCT** - Correlated Color Temperature (Kelvin)
+- **Chromaticity Coordinates** (x, y on CIE diagram)
+
+### Electrical Characteristics
+
+- **$V_F$** - Forward Voltage (varies by color: Red ~1.8-2.2V, Blue/White ~3.0-3.6V)
+- **$I_F$** - Forward Current
+- **$I_{F(max)}$** - Maximum Forward Current
+- **$I_{F(peak)}$** - Peak Forward Current (pulsed)
+- **$V_R$** - Reverse Voltage
+- **$I_R$** - Reverse Current
+
+### Efficiency Characteristics
+
+- **$\eta$** - Quantum Efficiency
+- **Luminous Efficacy** - lumens per watt (lm/W)
+- **Wall-plug Efficiency** - optical power out/electrical power in
+
+### Thermal Characteristics
+
+- **$T_j$** - Junction Temperature
+- **$\theta_{JC}$** - Thermal Resistance Junction-to-Case
+- **$\theta_{JA}$** - Thermal Resistance Junction-to-Ambient
+- **$T_{C(max)}$** - Maximum Case Temperature
+- **Thermal Derating** - Current reduction vs. temperature
+
+### Dynamic Characteristics
+
+- **$t_{on}$** - Turn-on Time
+- **$t_{off}$** - Turn-off Time
+- **$t_r$** - Rise Time
+- **$t_f$** - Fall Time
+- **Modulation Bandwidth** (for communication LEDs)
+
+### Optical Power vs. Parameters
+
+- **$I_v$ vs. $I_F$** - Intensity vs. forward current
+- **$\lambda_p$ vs. $T_j$** - Wavelength shift with temperature
+- **$I_v$ vs. $T_j$** - Intensity vs. temperature
+- **Binning Parameters** - Brightness, color, voltage bins
+
+## 8. Photodiodes
+
+### Optical Characteristics
+
+- **$S$ or $R$** - Responsivity (A/W)
+- **$\lambda_p$** - Peak Sensitivity Wavelength
+- **Spectral Response Range** - Wavelength range of sensitivity
+- **QE** - Quantum Efficiency (%)
+- **Active Area** - Photosensitive area (mm²)
+- **$\Phi_{min}$** - Minimum Detectable Optical Power
+
+### Electrical/Dark Characteristics
+
+- **$I_D$ or $I_{dark}$** - Dark Current
+- **$V_R$** - Reverse Voltage (operating bias)
+- **$V_{BR}$** - Breakdown Voltage
+- **$R_{sh}$** - Shunt Resistance
+- **$R_s$** - Series Resistance
+- **$V_{OC}$** - Open Circuit Voltage (photovoltaic mode)
+- **$I_{SC}$** - Short Circuit Current (photovoltaic mode)
+
+### Capacitance and Speed
+
+- **$C_j$** - Junction Capacitance (at specified $V_R$)
+- **$t_r$** - Rise Time
+- **$t_f$** - Fall Time
+- **$f_{3dB}$** - 3dB Cutoff Frequency
+- **$BW$** - Bandwidth
+
+### Noise Characteristics
+
+- **$NEP$** - Noise Equivalent Power (W/√Hz)
+- **$D^*$** - Detectivity (specific detectivity)
+- **Shot Noise** - Current noise
+- **Johnson Noise** - Thermal noise
+
+### Linearity Characteristics
+
+- **Linear Dynamic Range** - Range of linear response
+- **Non-linearity** - Deviation from linear response (%)
+
+## 9. PIN Diodes
+
+### DC Characteristics
+
+- **$V_F$** - Forward Voltage
+- **$I_F$** - Forward Current
+- **$V_R$** - Reverse Voltage
+- **$I_R$** - Reverse Leakage Current
+- **$V_{BR}$** - Breakdown Voltage
+- **$R_s$** - Series Resistance (forward biased)
+
+### RF Characteristics
+
+- **$R_F$** - Forward Resistance (at RF frequency)
+- **$C_T$** - Total Capacitance (reverse biased)
+- **$C_{j0}$** - Zero-bias Capacitance
+- **$R_R$** - Reverse Resistance
+- **$Q$** - Quality Factor
+- **Isolation** - RF isolation in OFF state (dB)
+- **Insertion Loss** - Loss in ON state (dB)
+- **$f_{co}$** - Cutoff Frequency
+
+### Switching Characteristics
+
+- **$t_{rr}$** - Reverse Recovery Time
+- **$t_s$** - Switching Time
+- **Carrier Lifetime** ($\tau$)
+
+### Applications as Variable Resistor/Attenuator
+
+- **Control Current Range** - Range of $I_F$ for resistance control
+- **Resistance Range** - Minimum to maximum $R_F$
+- **Linearity of Control** - R vs. I characteristic
+
+## 10. Varactor Diodes (Varicap, Tuning Diodes)
+
+### Capacitance Characteristics
+
+- **$C_j$** - Junction Capacitance (at specified voltage)
+- **$C_{j0}$** - Zero-bias Capacitance
+- **$C_T$** - Total Capacitance
+- **Tuning Range** or **Capacitance Ratio** - $C_{max}/C_{min}$
+- **$C_V$ Characteristic** - Capacitance vs. reverse voltage curve
+- **Tuning Linearity** - Linearity of C-V characteristic
+
+### DC Characteristics
+
+- **$V_R$** - Reverse Voltage (tuning voltage)
+- **$I_R$** - Reverse Leakage Current
+- **$V_{BR}$** - Breakdown Voltage
+- **$V_F$** - Forward Voltage
+
+### RF Characteristics
+
+- **$Q$** - Quality Factor (at specified frequency and voltage)
+- **$R_s$** - Series Resistance
+- **$f$** - Measurement Frequency
+- **Figure of Merit** - $Q \times \text{Tuning Ratio}$
+
+### Noise Characteristics
+
+- **Flicker Noise** - 1/f noise
+- **Phase Noise Contribution**
+
+### Temperature Characteristics
+
+- **$TC_C$** - Temperature Coefficient of Capacitance
+- **Capacitance stability vs. temperature**
+
+## 11. Tunnel Diodes (Esaki Diodes)
+
+### DC Characteristics
+
+- **$I_P$** - Peak Current
+- **$V_P$** - Peak Voltage
+- **$I_V$** - Valley Current
+- **$V_V$** - Valley Voltage
+- **$I_P/I_V$** - Peak-to-Valley Ratio
+- **$V_F$** - Forward Voltage (beyond valley)
+- **$I_F$** - Forward Current (beyond valley)
+
+### Negative Resistance Region
+
+- **$-R_N$ or $R_{neg}$** - Negative Resistance (between peak and valley)
+- **$\Delta V$** - Voltage swing in negative resistance region
+- **$\Delta I$** - Current swing in negative resistance region
+
+### High-Frequency Characteristics
+
+- **$C_j$** - Junction Capacitance
+- **$R_s$** - Series Resistance
+- **$L_s$** - Series Inductance
+- **$f_{max}$** - Maximum Oscillation Frequency
+- **Self-resonant Frequency**
+
+### Switching Characteristics
+
+- **Switching Speed** - Extremely fast (picoseconds)
+
+## 12. Step Recovery Diodes (Snap Diodes)
+
+### Switching Characteristics
+
+- **$t_{rr}$** - Reverse Recovery Time
+- **$t_t$** - Transition Time (snap time)
+- **$t_s$** - Storage Time
+- **Snap Ratio** - $t_s/t_t$
+- **$Q_{rr}$** - Stored Charge
+
+### DC Characteristics
+
+- **$V_F$** - Forward Voltage
+- **$I_F$** - Forward Current
+- **$V_R$** - Reverse Voltage
+- **$C_j$** - Junction Capacitance
+
+### Frequency Multiplier Characteristics
+
+- **Multiplication Factor** - Harmonic generation capability
+- **Output Spectrum** - Harmonic content
+- **Conversion Efficiency**
+
+## 13. Gunn Diodes
+
+### DC Characteristics
+
+- **$V_{th}$** - Threshold Voltage
+- **$I_{th}$** - Threshold Current
+- **Negative Differential Resistance**
+- **$n_0$** - Carrier Concentration
+
+### Oscillation Characteristics
+
+- **$f_0$** - Oscillation Frequency (GHz range)
+- **$P_{out}$** - Output Power
+- **Efficiency** - DC to RF conversion efficiency
+- **Tuning Range**
+- **$Q$** - Quality Factor
+
+### Thermal Characteristics
+
+- High heat generation
+- Critical thermal management requirements
+
+## 14. Laser Diodes
+
+### Optical Characteristics
+
+- **$\lambda$** - Emission Wavelength
+- **$\Delta\lambda$** - Spectral Width (very narrow for lasers)
+- **$P_{opt}$** - Optical Output Power
+- **$I_{th}$** - Threshold Current
+- **Slope Efficiency** - $dP/dI$ above threshold
+- **Beam Divergence** - Angular spread (parallel and perpendicular)
+- **Numerical Aperture** - NA
+- **$M^2$** - Beam Quality Factor
+- **Coherence Length**
+- **Polarization Ratio**
+
+### Electrical Characteristics
+
+- **$V_F$** - Forward Voltage
+- **$I_F$** - Forward Current (operating current)
+- **$I_{th}$** - Lasing Threshold Current
+- **$I_{max}$** - Maximum Operating Current
+- **Series Resistance**
+
+### Dynamic Characteristics
+
+- **$t_{on}$** - Turn-on Time (delay + rise)
+- **$t_d$** - Delay Time
+- **$t_r$** - Rise Time
+- **Modulation Bandwidth**
+- **Relaxation Oscillation Frequency**
+
+### Temperature Characteristics
+
+- **$dI_{th}/dT$** - Threshold current temperature dependence
+- **$d\lambda/dT$** - Wavelength temperature coefficient
+- **$T_{op}$** - Operating Temperature Range
+- **Case Temperature** - $T_C$ (critical for lifetime)
+
+### Lifetime and Reliability
+
+- **MTTF** - Mean Time To Failure
+- **Operating Hours** - Expected lifetime
+- **Power degradation rate**
+
+## 15. Rectifier Bridge Diodes
+
+### Configuration Characteristics
+
+- **Single-phase or Three-phase**
+- **Number of Diodes** - 4 (single-phase) or 6 (three-phase)
+
+### DC Output Characteristics
+
+- **$V_{DC}$** - DC Output Voltage
+- **$I_{DC}$** - DC Output Current
+- **$V_{rms}$** - RMS Voltage Rating (input)
+- **Voltage Drop** - Total forward drop (2× $V_F$ for single-phase)
+
+### AC Input Characteristics
+
+- **$V_{RMS(max)}$** - Maximum RMS Input Voltage
+- **$f$** - Line Frequency (50/60 Hz typically)
+
+### All individual diode characteristics apply
+
+## 16. Constant Current Diodes (CRD - Current Regulating Diode)
+
+### Current Regulation Characteristics
+
+- **$I_P$** - Pinch-off Current (regulated current value)
+- **$\Delta I_P$** - Current Tolerance
+- **Dynamic Resistance** - Very high in regulation region
+- **$V_K$** - Knee Voltage (minimum voltage for regulation)
+- **$V_{max}$** - Maximum Operating Voltage
+
+### Temperature Characteristics
+
+- **$TC_{I_P}$** - Temperature Coefficient of Regulated Current
+
+## 17. Switching Diodes (Small Signal)
+
+Similar to standard diodes but optimized for:
+
+### Fast Switching
+
+- **$t_{rr}$** - Reverse Recovery Time (typically < 4ns)
+- **$C_T$** - Total Capacitance (very low, < 2pF)
+- **Low $V_F$** - Typically 0.7-1.0V at low currents
+
+### Small Signal Characteristics
+
+- **Low $I_F$** ratings - Typically < 500mA
+- **Low power dissipation**
+- **Small package sizes**
+
+## 18. Avalanche Diodes
+
+### Avalanche Characteristics
+
+- **$V_{BR}$** - Avalanche Breakdown Voltage
+- **$I_{av}$** - Avalanche Current
+- **$E_{AS}$** - Single Pulse Avalanche Energy
+- **Avalanche Energy Rating**
+- **Repetitive Avalanche Rating**
+
+### Used for Protection and Voltage Reference
+
+- Similar characteristics to TVS and Zener diodes
+
+## 19. Backward Diodes
+
+### DC Characteristics
+
+- **Very low $V_F$** - Forward voltage (similar to tunnel diode beyond valley)
+- **$I_F$** - Forward Current
+- **Reverse Conduction** - Conducts significantly in reverse
+- **$V_R$** - Reverse Voltage
+- **$I_R$** - Reverse Current (high)
+
+### Applications Characteristics
+
+- **Detector sensitivity** - Very low voltage detection
+- **High-speed rectification**
+
+## 20. Silicon Carbide (SiC) Diodes
+
+All standard diode characteristics plus:
+
+### Enhanced Performance
+
+- **Higher $V_{BR}$** - Breakdown voltages (> 1200V common)
+- **Lower $V_F$** - Forward voltage than Si at high voltages
+- **Higher operating temperature** - Up to 200°C junction temp
+- **Negligible $t_{rr}$** - Near-zero reverse recovery (Schottky types)
+- **Lower $C_j$** - Junction capacitance
+- **Higher switching speeds**
+- **Better thermal conductivity**
+
+## 21. Gallium Nitride (GaN) Diodes
+
+Similar enhancements to SiC:
+
+- **Very low $V_F$**
+- **Extremely fast switching**
+- **High breakdown voltage**
+- **Wide bandgap advantages**
+- **High temperature operation**
+
+## 22. Temperature-Dependent Characteristics (All Diodes)
+
+### General Temperature Effects
+
+- **$V_F$ decreases with temperature** - Typically -2mV/°C
+- **$I_R$ increases with temperature** - Exponentially
+- **$V_{BR}$ changes with temperature**
+- **$C_j$ varies with temperature**
+- **Recovery times affected by temperature**
+
+### Thermal Runaway Considerations
+
+- **Critical for power diodes**
+- **Derating curves** - Current vs. temperature
+
+## 23. Packaging and Mechanical Characteristics
+
+### Package Types
+
+- **Through-hole**: DO-41, DO-35, DO-15, TO-220, TO-247, etc.
+- **Surface-mount**: SOD-123, SOD-323, SMA, SMB, SMC, etc.
+- **Power packages**: Stud mount, Press-fit, Module packages
+
+### Mechanical Specifications
+
+- **Lead spacing**
+- **Package dimensions**
+- **Mounting torque** (for power packages)
+- **Soldering temperature** - Peak and duration
+- **Moisture Sensitivity Level** (MSL)
+
+## 24. Reliability and Quality Characteristics
+
+### Reliability Parameters
+
+- **MTTF** - Mean Time To Failure
+- **FIT** - Failures In Time (failures per billion device-hours)
+- **λ** - Failure Rate
+- **MTBF** - Mean Time Between Failures
+
+### Quality and Testing
+
+- **Tj cycling** - Thermal cycling capability
+- **Power cycling** - On/off power cycle rating
+- **ESD Rating** - Electrostatic discharge sensitivity
+- **Radiation Hardness** - For space/nuclear applications
+- **Qualification Standards** - MIL-PRF-19500, AEC-Q101, etc.
+
+## 25. Specialized Application Diodes
+
+### RF Detector Diodes
+
+- **Tangential Sensitivity** (TSS)
+- **Voltage Sensitivity** (mV/μW)
+- **Video Resistance**
+- **Detection Range**
+
+### Mixer Diodes
+
+- **Conversion Loss**
+- **LO Power Requirements**
+- **IF Bandwidth**
+- **Intermodulation products**
+
+### Frequency Multiplier Diodes
+
+- **Multiplication Factor** (2×, 3×, etc.)
+- **Conversion Efficiency**
+- **Harmonic Suppression**
+
+---
+
+## Summary Table: Diode Types Quick Reference
+
+| Diode Type | Key Characteristic | Typical Application |
+|------------|-------------------|---------------------|
+| Standard Rectifier | Low cost, general purpose | AC-DC conversion |
+| Fast Recovery | $t_{rr}$ < 500ns | Switching power supplies |
+| Ultrafast | $t_{rr}$ < 100ns | High-frequency switching |
+| Schottky | Low $V_F$, zero $t_{rr}$ | Low voltage rectification |
+| Zener | Voltage reference | Voltage regulation |
+| TVS | Fast clamping | Transient protection |
+| LED | Light emission | Illumination, displays |
+| Photodiode | Light detection | Optical receivers |
+| PIN | Variable resistance at RF | RF switches, attenuators |
+| Varactor | Voltage-variable capacitance | Tuning circuits |
+| Tunnel | Negative resistance | Microwave oscillators |
+| Step Recovery | Fast snap action | Frequency multipliers |
+| Gunn | Negative resistance | Microwave sources |
+| Laser | Coherent light | Optical communication |
+| SiC/GaN | High voltage, fast switching | Power electronics |
+
+---
+
+## Summary
+
+This document covers the major electrical characteristics across all common diode types. Actual datasheets may include additional specialized parameters depending on the specific application, technology, and manufacturer. Always consult the manufacturer's datasheet for precise values, test conditions, and operating limits.
+
+## References
+
+For specific diode models, always refer to:
+- Manufacturer datasheets
+- Application notes
+- SPICE models for simulation
+- Industry standards (JEDEC, IEC, MIL-STD)
+- Reliability and qualification reports
