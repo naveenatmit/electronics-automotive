@@ -1,0 +1,387 @@
+---
+title: "Transistor Electrical Characteristics Reference"
+format: html
+author: "Electronics Reference"
+date: today
+toc: true
+toc-depth: 3
+---
+
+# Transistor Electrical Characteristics
+
+This document provides a comprehensive reference of electrical characteristics for different transistor variants available in the market.
+
+## 1. Bipolar Junction Transistors (BJT)
+
+### 1.1 NPN and PNP Transistors
+
+#### DC Characteristics
+
+- **$V_{BE}$** - Base-Emitter Voltage
+- **$V_{CE}$** - Collector-Emitter Voltage
+- **$V_{CB}$** - Collector-Base Voltage
+- **$V_{CE(sat)}$** - Collector-Emitter Saturation Voltage
+- **$V_{BE(sat)}$** - Base-Emitter Saturation Voltage
+- **$I_C$** - Collector Current
+- **$I_B$** - Base Current
+- **$I_E$** - Emitter Current
+- **$I_{CBO}$** - Collector-Base Leakage Current (Emitter Open)
+- **$I_{CEO}$** - Collector-Emitter Leakage Current (Base Open)
+- **$I_{EBO}$** - Emitter-Base Leakage Current (Collector Open)
+- **$h_{FE}$ or $\beta$** - DC Current Gain (Forward Current Transfer Ratio)
+- **$\beta_{forced}$** - Forced Beta in Saturation
+- **$V_{BR(CEO)}$** - Collector-Emitter Breakdown Voltage (Base Open)
+- **$V_{BR(CBO)}$** - Collector-Base Breakdown Voltage (Emitter Open)
+- **$V_{BR(EBO)}$** - Emitter-Base Breakdown Voltage (Collector Open)
+
+#### AC/Small-Signal Characteristics
+
+- **$h_{fe}$** - Small-signal Current Gain
+- **$h_{ie}$** - Input Impedance
+- **$h_{re}$** - Reverse Voltage Feedback Ratio
+- **$h_{oe}$** - Output Admittance
+- **$f_T$** - Transition Frequency (Gain-Bandwidth Product)
+- **$C_{ib}$** - Input Capacitance
+- **$C_{ob}$** - Output Capacitance
+- **$C_{c}$ or $C_{cb}$** - Collector-Base Capacitance
+- **$C_e$ or $C_{eb}$** - Emitter-Base Capacitance
+- **$r_e$** - Emitter Resistance
+- **$r_b$** - Base Resistance
+- **$r_{bb'}$** - Base Spreading Resistance
+- **$g_m$** - Transconductance
+
+#### Switching Characteristics
+
+- **$t_d$** - Delay Time
+- **$t_r$** - Rise Time
+- **$t_s$** - Storage Time
+- **$t_f$** - Fall Time
+- **$t_{on}$** - Turn-on Time
+- **$t_{off}$** - Turn-off Time
+
+#### Power and Thermal Characteristics
+
+- **$P_D$ or $P_{tot}$** - Total Power Dissipation
+- **$P_{C(max)}$** - Maximum Collector Power Dissipation
+- **$T_j$** - Junction Temperature
+- **$T_{j(max)}$** - Maximum Junction Temperature
+- **$T_{stg}$** - Storage Temperature Range
+- **$\theta_{JC}$** - Thermal Resistance Junction-to-Case
+- **$\theta_{JA}$** - Thermal Resistance Junction-to-Ambient
+- **$\theta_{CS}$** - Thermal Resistance Case-to-Sink
+
+## 2. Field Effect Transistors (FET)
+
+### 2.1 Junction FET (JFET) - N-Channel and P-Channel
+
+#### DC Characteristics
+
+- **$V_{GS}$** - Gate-Source Voltage
+- **$V_{DS}$** - Drain-Source Voltage
+- **$V_{GS(off)}$ or $V_p$** - Gate-Source Cutoff Voltage (Pinch-off Voltage)
+- **$I_D$** - Drain Current
+- **$I_{DSS}$** - Drain-Source Current with Gate Shorted
+- **$I_{GSS}$** - Gate-Source Leakage Current
+- **$I_{GS}$** - Gate Current
+- **$V_{BR(GSS)}$** - Gate-Source Breakdown Voltage
+- **$V_{BR(DGS)}$** - Drain-Gate Breakdown Voltage
+- **$r_{DS(on)}$** - Drain-Source On-Resistance
+
+#### AC/Small-Signal Characteristics
+
+- **$g_{fs}$ or $g_m$** - Forward Transconductance
+- **$g_{os}$ or $y_{os}$** - Output Conductance
+- **$g_{is}$ or $y_{is}$** - Input Conductance
+- **$C_{iss}$** - Input Capacitance (Short-circuit)
+- **$C_{rss}$** - Reverse Transfer Capacitance
+- **$C_{oss}$** - Output Capacitance
+- **$C_{gs}$** - Gate-Source Capacitance
+- **$C_{gd}$** - Gate-Drain Capacitance
+- **$C_{ds}$** - Drain-Source Capacitance
+- **$r_{ds}$** - Drain-Source Resistance
+
+#### Noise Characteristics
+
+- **$NF$** - Noise Figure
+- **$en$** - Equivalent Input Noise Voltage
+
+### 2.2 MOSFET (Metal-Oxide-Semiconductor FET)
+
+#### 2.2.1 Enhancement Mode (N-Channel and P-Channel)
+
+##### DC Characteristics
+
+- **$V_{GS}$** - Gate-Source Voltage
+- **$V_{DS}$** - Drain-Source Voltage
+- **$V_{GS(th)}$ or $V_t$ or $V_{th}$** - Gate Threshold Voltage
+- **$I_D$** - Drain Current
+- **$I_{D(on)}$** - On-State Drain Current
+- **$I_{DSS}$** - Zero Gate Voltage Drain Current
+- **$I_{GSS}$** - Gate-Source Leakage Current
+- **$r_{DS(on)}$** - Static Drain-Source On-Resistance
+- **$R_{DS(on)}$** - Drain-Source On-Resistance (often temperature dependent)
+- **$V_{BR(DSS)}$** - Drain-Source Breakdown Voltage
+- **$V_{BR(GSS)}$** - Gate-Source Breakdown Voltage (Gate Oxide Breakdown)
+- **$V_{SD}$** - Source-Drain Voltage (for body diode)
+- **$I_S$** - Source Current
+- **$Q_g$** - Total Gate Charge
+- **$Q_{gs}$** - Gate-Source Charge
+- **$Q_{gd}$** - Gate-Drain (Miller) Charge
+- **$Q_{rr}$** - Reverse Recovery Charge (body diode)
+
+##### AC/Small-Signal Characteristics
+
+- **$g_m$ or $g_{fs}$** - Transconductance
+- **$C_{iss}$** - Input Capacitance
+- **$C_{oss}$** - Output Capacitance
+- **$C_{rss}$ or $C_{miller}$** - Reverse Transfer Capacitance (Miller Capacitance)
+- **$C_{gs}$** - Gate-Source Capacitance
+- **$C_{gd}$** - Gate-Drain Capacitance
+- **$C_{ds}$** - Drain-Source Capacitance
+- **$r_{ds}$** - Small-signal Drain-Source Resistance
+
+##### Switching Characteristics
+
+- **$t_d(on)$** - Turn-on Delay Time
+- **$t_r$** - Rise Time
+- **$t_d(off)$** - Turn-off Delay Time
+- **$t_f$** - Fall Time
+- **$t_{rr}$** - Reverse Recovery Time (body diode)
+- **$Q_{rr}$** - Reverse Recovery Charge (body diode)
+- **$I_{RRM}$** - Maximum Reverse Recovery Current
+
+##### Power and Thermal Characteristics
+
+- **$P_D$** - Maximum Power Dissipation
+- **$T_j$** - Junction Temperature
+- **$T_{j(max)}$** - Maximum Junction Temperature
+- **$\theta_{JC}$** - Thermal Resistance Junction-to-Case
+- **$\theta_{JA}$** - Thermal Resistance Junction-to-Ambient
+- **$\theta_{CS}$** - Thermal Resistance Case-to-Sink
+
+##### Avalanche Characteristics
+
+- **$E_{AS}$** - Single Pulse Avalanche Energy
+- **$I_{AS}$** - Avalanche Current
+- **$E_{AR}$** - Repetitive Avalanche Energy
+
+##### Body Diode Characteristics
+
+- **$V_{SD}$** - Source-Drain Voltage (Diode Forward Voltage)
+- **$I_S$** - Continuous Source Current (Body Diode)
+- **$I_{SM}$** - Pulsed Source Current (Body Diode)
+
+#### 2.2.2 Depletion Mode (N-Channel and P-Channel)
+
+Similar characteristics to Enhancement Mode, with key differences:
+
+- **$V_{GS(off)}$** - Gate-Source Voltage for Drain Current Cutoff
+- **$I_{DSS}$** - Drain Current at Zero Gate Voltage (typically higher than enhancement mode)
+
+### 2.3 Power MOSFET Specific Characteristics
+
+- **$R_{DS(on)}$ (Temperature Coefficient)** - Temperature dependence of on-resistance
+- **$dV/dt$ Rating** - Maximum rate of voltage change
+- **$dI/dt$ Rating** - Maximum rate of current change
+- **$SOA$** - Safe Operating Area
+- **$L_D$** - Drain Inductance
+- **$L_S$** - Source Inductance
+- **$L_G$** - Gate Inductance
+
+### 2.4 GaN HEMT (Gallium Nitride High Electron Mobility Transistor)
+
+All MOSFET characteristics plus:
+
+- **$R_{G(int)}$** - Internal Gate Resistance
+- **$V_{GS(th)}$** - Enhanced threshold voltage characteristics
+- **$f_{sw(max)}$** - Maximum Switching Frequency
+- **$Q_{oss}$** - Output Charge
+- **Higher breakdown voltages and faster switching speeds**
+
+### 2.5 SiC MOSFET (Silicon Carbide MOSFET)
+
+All Power MOSFET characteristics plus:
+
+- **Higher temperature operation capability**
+- **Lower $R_{DS(on)}$ at high temperatures**
+- **$V_{GS(rec)}$** - Recommended gate-source voltage
+- **Enhanced thermal characteristics**
+
+## 3. Insulated Gate Bipolar Transistor (IGBT)
+
+### DC Characteristics
+
+- **$V_{GE}$** - Gate-Emitter Voltage
+- **$V_{CE}$** - Collector-Emitter Voltage
+- **$V_{GE(th)}$** - Gate-Emitter Threshold Voltage
+- **$V_{CE(sat)}$** - Collector-Emitter Saturation Voltage
+- **$I_C$** - Collector Current
+- **$I_{C(pulse)}$** - Pulsed Collector Current
+- **$I_{CES}$** - Collector-Emitter Leakage Current
+- **$I_{GES}$** - Gate-Emitter Leakage Current
+- **$V_{BR(CES)}$** - Collector-Emitter Breakdown Voltage
+- **$V_{F}$** - Freewheeling Diode Forward Voltage
+
+### AC/Dynamic Characteristics
+
+- **$g_m$** - Transconductance
+- **$C_{ies}$** - Input Capacitance
+- **$C_{oes}$** - Output Capacitance
+- **$C_{res}$** - Reverse Transfer Capacitance
+- **$Q_g$** - Total Gate Charge
+- **$Q_{ge}$** - Gate-Emitter Charge
+- **$Q_{gc}$** - Gate-Collector Charge
+
+### Switching Characteristics
+
+- **$t_{d(on)}$** - Turn-on Delay Time
+- **$t_r$** - Rise Time
+- **$t_{d(off)}$** - Turn-off Delay Time
+- **$t_f$** - Fall Time
+- **$t_{fi}$** - Current Fall Time
+- **$t_{fv}$** - Voltage Fall Time
+- **$E_{on}$** - Turn-on Energy Loss
+- **$E_{off}$** - Turn-off Energy Loss
+- **$E_{ts}$** - Total Switching Energy Loss
+
+### Diode Recovery Characteristics
+
+- **$t_{rr}$** - Reverse Recovery Time
+- **$Q_{rr}$** - Reverse Recovery Charge
+- **$I_{RRM}$** - Peak Reverse Recovery Current
+- **$V_{F}$** - Diode Forward Voltage Drop
+
+### Power and Thermal Characteristics
+
+- **$P_D$ or $P_{tot}$** - Total Power Dissipation
+- **$T_j$** - Junction Temperature
+- **$T_{vj}$** - Virtual Junction Temperature
+- **$\theta_{JC}$** - Thermal Resistance Junction-to-Case
+- **$\theta_{JA}$** - Thermal Resistance Junction-to-Ambient
+- **$\theta_{CH}$** - Thermal Resistance Case-to-Heatsink
+
+### Short Circuit Characteristics
+
+- **$t_{sc}$** - Short Circuit Withstand Time
+- **$I_{SC}$** - Short Circuit Current
+
+## 4. Darlington Transistors
+
+Combines BJT characteristics with:
+
+- **Higher $h_{FE}$** - Compound current gain ($\beta_1 \times \beta_2$)
+- **Higher $V_{BE(sat)}$** - Typically ~1.2-1.4V
+- **Higher $V_{CE(sat)}$** - Higher than single BJT
+- **Slower switching speeds** - Due to combined storage times
+
+## 5. Photo Transistors
+
+All BJT characteristics plus:
+
+- **$I_{C(dark)}$** - Dark Current
+- **$I_L$ or $I_{ph}$** - Photo Current
+- **$S$** - Sensitivity (A/lux or A/W)
+- **$\lambda$** - Wavelength of Peak Sensitivity
+- **Spectral Response** - Response vs. wavelength curve
+- **Rise/Fall Time** - Optical response time
+
+## 6. Unijunction Transistor (UJT)
+
+- **$V_{BB}$** - Interbase Voltage
+- **$V_P$** - Peak Voltage
+- **$V_V$** - Valley Voltage
+- **$I_P$** - Peak Current
+- **$I_V$** - Valley Current
+- **$I_{EO}$** - Emitter Reverse Current
+- **$\eta$** - Intrinsic Standoff Ratio
+- **$R_{BB}$** - Interbase Resistance
+- **$r_b$** - Base Resistance
+
+## 7. Dual Gate MOSFET
+
+All MOSFET characteristics plus:
+
+- **$V_{G1S}$** - Gate 1 to Source Voltage
+- **$V_{G2S}$** - Gate 2 to Source Voltage
+- **$V_{G1(th)}$** - Gate 1 Threshold Voltage
+- **$V_{G2(th)}$** - Gate 2 Threshold Voltage
+- **$g_{m1}$** - Transconductance of Gate 1
+- **$g_{m2}$** - Transconductance of Gate 2
+- **Cross-modulation characteristics**
+
+## 8. High Frequency/RF Transistors
+
+Additional specialized characteristics:
+
+- **$f_{max}$** - Maximum Oscillation Frequency
+- **$f_T$** - Current Gain Cutoff Frequency
+- **$S_{21}$** - Forward Transmission Coefficient (S-parameters)
+- **$S_{11}$** - Input Reflection Coefficient
+- **$S_{12}$** - Reverse Transmission Coefficient
+- **$S_{22}$** - Output Reflection Coefficient
+- **$MAG$** - Maximum Available Gain
+- **$MSG$** - Maximum Stable Gain
+- **$NF_{min}$** - Minimum Noise Figure
+- **$\Gamma_{opt}$** - Optimum Source Reflection Coefficient
+- **$R_n$** - Noise Resistance
+- **$OIP3$** - Output Third-Order Intercept Point
+- **$P_{1dB}$** - 1 dB Compression Point
+
+## 9. Small Signal vs. Power Transistors
+
+### Common Distinctions:
+
+**Small Signal:**
+- Lower current ratings (typically < 1A)
+- Lower power dissipation (typically < 1W)
+- Optimized for high frequency
+- Lower capacitances
+
+**Power Transistors:**
+- Higher current ratings (> 1A, up to thousands of amps)
+- Higher power dissipation (> 1W, up to kilowatts)
+- Lower $R_{DS(on)}$ for switches
+- Optimized thermal characteristics
+- SOA curves important
+
+## 10. Temperature Coefficients
+
+Many parameters vary with temperature:
+
+- **$TC_{V_{BE}}$** - Temperature Coefficient of Base-Emitter Voltage
+- **$TC_{V_{GS(th)}}$** - Temperature Coefficient of Threshold Voltage
+- **$TC_{R_{DS(on)}}$** - Temperature Coefficient of On-Resistance
+- **$TC_{h_{FE}}$** - Temperature Coefficient of Current Gain
+- **$TC_{I_{CEO}}$** - Temperature Coefficient of Leakage Current
+
+## 11. Reliability and Stress Characteristics
+
+- **$MTBF$** - Mean Time Between Failures
+- **$FIT$** - Failures in Time (failures per billion device hours)
+- **$ESD$ Rating** - Electrostatic Discharge Rating
+- **$HBM$** - Human Body Model ESD
+- **$MM$** - Machine Model ESD
+- **$CDM$** - Charged Device Model ESD
+- **Latch-up Immunity** (for CMOS devices)
+
+## 12. Package-Related Characteristics
+
+- **$R_{\theta JC}$** - Junction to Case Thermal Resistance
+- **$R_{\theta JA}$** - Junction to Ambient Thermal Resistance
+- **Package Inductance** - Lead/bond wire inductance
+- **Package Capacitance** - Parasitic capacitances
+- **Lead Resistance** - Resistance of package leads
+
+---
+
+## Summary
+
+This document covers the major electrical characteristics across all common transistor types. Actual datasheets may include additional specialized parameters depending on the specific application and manufacturer. Always consult the manufacturer's datasheet for precise values and operating conditions.
+
+## References
+
+For specific transistor models, always refer to:
+- Manufacturer datasheets
+- Application notes
+- SPICE models for simulation parameters
+- Reliability reports and qualification data
